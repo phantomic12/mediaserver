@@ -68,8 +68,9 @@ jellyfin() {
   sudo apt update
   sudo apt install jellyfin
   sudo systemctl start jellyfin.service
+  sudo systemctl enable jellyfin.service
   echo "${BLUE}Jellyfin has been Installed succesfully${NORMAL}"
-  echo "${RED}Go to ip.adress.of.server:8096 in your browser now${NORMAL}"
+  echo "${RED}Reboot your system, then go to ip.adress.of.server:8096 in your browser.${NORMAL}"
 }
 
 # ★★★Installation★★★
