@@ -19,7 +19,7 @@ PURPLE="${COLOR}1;35m"
 # ★★★Installation of Rclone and Creating a remote★★★
 rclone() {
   curl https://rclone.org/install.sh | sudo bash
-  sudo apt update && sudo apt install fuse
+  sudo apt update && sudo apt install fuse3
   sudo sed -i '/#user/s/#//g' /etc/fuse.conf
   sudo mkdir /mnt/media
   sudo rclone config
